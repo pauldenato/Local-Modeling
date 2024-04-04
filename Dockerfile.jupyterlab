@@ -1,0 +1,8 @@
+FROM amazon/aws-glue-libs:glue_libs_4.0.0_image_01
+
+# Copy jars
+COPY ./app/jars /home/glue_user/spark/jars/
+
+#Install Python stuff for ML
+RUN pip3 install seaborn 
+RUN pip3 install tensorflow

@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - "db-jupyter:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "13306:3306"
+
+  jupyterlab:
+    build:
+      context: ./
+      dockerfile: Dockerfile.jupyterlab
+    depends_on:
+      - db
+    environment:
+      DISABLE_SSL: TRUE
+      AWS_REGION: us-east-1
+    ports:
+      - "8889:8888"
+      - "4040:4040"
+    volumes:
+      - "~/.aws:/root/.aws:ro"
+      - "./labs:/home/glue_user/workspace/jupyter_workspace/"
+    command:
+      - /home/glue_user/jupyter/jupyter_start.sh
+
+volumes:
+  db-jupyter:
