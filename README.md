@@ -10,14 +10,14 @@
 
 ### MYSQL - GETTING STARTED ###
 * Connect to the container with your MySql IDE
-	* SERVER HOST - localhost
-	* SERVER PORT - 13306
-	* LOGIN - root
-	* PASSWORD - password
+	* SERVER HOST - `localhost`
+	* SERVER PORT - `13306`
+	* LOGIN - `root`
+	* PASSWORD - `password`
 	* Import the csv data from `app/csv/2024 Prospect Age Database.csv` into a new table called `2024_nfl_prospects`
 
-###### JUPYTER ##
+### JUPYTER ###
 * Navigate to `http://localhost:8889`
 * You can open one of the existing notebooks are create a new one.
 * If you choose to use an existing you'll need to `Run All` from the menu
-* If you cho0se to make a new one start importing and have fun!
+* If you choose to make a new one start importing and have fun!
