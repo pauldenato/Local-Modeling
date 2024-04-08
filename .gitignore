@@ -13,3 +13,4 @@ Thumbs.db
 *.sublime-workspace
 *_notes/
 *.json
+labs/.ipynb_checkpoints/*
