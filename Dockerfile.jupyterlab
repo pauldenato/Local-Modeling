@@ -1,8 +1,16 @@
 FROM amazon/aws-glue-libs:glue_libs_4.0.0_image_01
+# Image contains
+	# Amazon Linux
+	# AWS Glue ETL library (aws-glue-libs)
+	# Apache Spark 3.3.0
+	# Spark history server
+	# Jupyter Lab
+	# Livy
 
 # Copy jars
 COPY ./app/jars /home/glue_user/spark/jars/
 
 #Install Python stuff for ML
-RUN pip3 install seaborn 
+# Model Training and Visualization
+RUN pip3 install seaborn
 RUN pip3 install tensorflow

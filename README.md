@@ -19,5 +19,5 @@
 ### JUPYTER LAB ###
 * Navigate to `http://localhost:8889`
 * You can open one of the existing notebooks are create a new one.
-* If you choose to use an existing you'll need to `Run All` from the menu or Click `Run` in each window
+* If you choose to use an existing you can click `Run` in each window
 * If you choose to make a new one start importing and have fun!
