@@ -1,5 +1,8 @@
 # README #
 
+### DOWNLOAD & INSTALL DOCKER ###
+* https://www.docker.com/products/docker-desktop/
+
 ### RUNNING THE CONTAINER ###
 * Navigate to this directory on your computer in Terminal (mac) or Powershell (Win) 
 * Start: `docker-compose -f docker-jupyterlab.yml up`
